@@ -21,10 +21,6 @@ const Login = (props) => {
     }
 
     const onSubmit = (data) => {
-        console.log(data);
-        const tempToken =  `Test`
-        const token = `Bearer ${tempToken}`
-        // props.history.push("/todos",token);
         axios.post('https://candidate.neversitup.com/todo/users/auth',data)
         .then(res => {    
             const token = `Bearer ${res.data.token}`
