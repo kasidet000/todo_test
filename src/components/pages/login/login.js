@@ -1,4 +1,5 @@
 import React from 'react';
+import './login.css'
 import { useForm } from "react-hook-form";
 import Input from "../../UI/input/input";
 import * as Yup from 'yup';
@@ -36,7 +37,7 @@ const Login = (props) => {
 
     return(
         <div style={styles}>
-            <div className="container col-sm-4">
+            <div className="container col-sm-4 login-card">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Input 
                         type="text"
