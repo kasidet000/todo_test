@@ -51,17 +51,24 @@ const TodoDetail = (props) => {
         actionButton = <button className="btn btn-primary" style={{width:'40%'}} onClick={()=>{updateTodo(props.location.state.data._id)}}>Edit</button>
     }
 
+    const styles = {
+        display: 'flex',
+        flexDirection:'column',
+        justifyContent:'center',
+        height:'100%',
+    }
+
     return(
-        <div className="page">
-           
-            <div className="container col-sm-4">
+        // <div className="page">
+        <div style={styles}>
+            <div className="container col-sm-4 title-card">
                 <div className="form-group">
                     <label className="title">TITLE</label>
                     <textarea className="form-control" value={title} onChange={e=>{setTitle(e.target.value)}}/>
                 </div>
                 <div className="form-group">
                     <label className="title">DESCRIPTION</label>
-                    <textarea className="form-control" value={description} onChange={e=>{setDescription(e.target.value)}}/>
+                    <textarea className="form-control" value={description} onChange={e=>{setDescription(e.target.value)}} style={{ height: 200 }}/>
                 </div>
                 <div className="td_d-footer">
                     <button className="btn btn-info" style={{width:'40%'}} onClick={cancelHandle}>Cancel</button>

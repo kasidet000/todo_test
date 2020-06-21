@@ -54,24 +54,6 @@ const Login = (props) => {
                         register={register}
                         errors={errors.password}
                     />
-                    {/* <input 
-                        type="text" 
-                        id="username"
-                        name="username"
-                        label="Username"
-                        ref={register}
-                        errors={errors.username}
-                    />
-                    {errors.username && <p className="text-danger">{errors.username.message}</p>} */}
-                    {/* <input 
-                        type="text" 
-                        id="password"
-                        name="password"
-                        label="Password"
-                        ref={register}
-                        errors={errors.password}/>
-                    {errors.password && <p className="text-danger">{errors.password.message}</p>} */}
-
                     <button className="btn btn-block btn-secondary" type="submit">Login</button>
                 </form>
             </div>

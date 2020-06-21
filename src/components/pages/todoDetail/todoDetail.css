@@ -2,3 +2,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.title-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 1%;
+}
