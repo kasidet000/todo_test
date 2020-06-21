@@ -30,7 +30,6 @@ const TodoDetail = (props) => {
             props.history.push("/todos",{token: token});
         })
         .catch(function (error) {
-            // alert('Invalid username or password');
        });
     }
 
@@ -42,7 +41,6 @@ const TodoDetail = (props) => {
             props.history.push("/todos",{token: token});
         })
         .catch(function (error) {
-            // alert('Invalid username or password');
        });
     }
 

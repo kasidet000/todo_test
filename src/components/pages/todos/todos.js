@@ -23,11 +23,8 @@ const Todos = (props) => {
             setTodo(res.data)
         })
         .catch(function (error) {
-            alert(`Error: failed to get todo's data`)
        });
     },[token])
-
-    // console.log(todos)
 
     const AddTodo = () => {
         props.history.push("/todo_detail",{token: token, action: "new", id: 0});
@@ -39,8 +36,6 @@ const Todos = (props) => {
             setTodo(todo.filter((data)=>(data._id !== id)));
         })
         .catch(function (error) {
-            console.log('Error:',error)
-            alert(`Error: failed to delete todo's data`)
        });
     }
 
@@ -51,8 +46,6 @@ const Todos = (props) => {
             props.history.push("/todo_detail",{token: token, action: "edit", data: res.data});
         })
         .catch(function (error) {
-            console.log('Error:',error)
-            alert(`Error: failed to load todo's data`)
        });
     }
 

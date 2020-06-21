@@ -6,13 +6,11 @@ const Todo = (props) => {
 
     
     let dateTime = moment(new Date(props.updateTime).toLocaleString()).format('DD/MM/YYYY HH:MM')
-    // dateTime = 
-    // console.log(props.updateTime.toLocaleString())
 
     return(
         <div style={{padding:'10px',width:'100%'}}>
-            <div className="card" style={{width:'100%'}} onClick={props.click}>
-                <div className="card-body">
+            <div className="card" style={{width:'100%'}}>
+                <div className="card-body" onClick={props.click}>
                     <button type="button" className="close c-close" aria-label="Close" onClick={props.delete}>
                         <span aria-hidden="true">&times;</span>
                     </button>
